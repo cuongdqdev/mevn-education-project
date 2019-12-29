@@ -1,7 +1,6 @@
 
 module.exports = {
     PORT: 5000,
-    MONGODB_URL: 'mongodb://localhost:27017/otp-demo',
-    JWTKEY: '!@##@!abcxyz!@##@!',
-    SESSION_SECRET: '@##$!!!@#$SDF!@##AAA$!@!@sss'
+    MONGODB_URL: 'mongodb://localhost:27017/education',
+    SECRET_JWT: '!@#)(D4NG_QU0c_CU0NG$%^{}'
 }
