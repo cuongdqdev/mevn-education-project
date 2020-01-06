@@ -8,6 +8,16 @@ connectDatabase();
 
 const { USER_ROUTER }               = require('./routes/home');
 
+// template ejs
+app.set('view engine', 'ejs');
+app.set('views', './views');
+
+app.use(server.static('public'))
+
+app.get('/home', (req, res) => {
+    res.render('index');
+})
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
