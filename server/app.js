@@ -1,6 +1,7 @@
 const server                        = require('express');
 const app                           = server();
-const bodyParser                    = require('body-parser')
+const bodyParser                    = require('body-parser');
+const cookieParser                  = require('cookie-parser')
 
 const { PORT }                      = require('./config');
 const { connectDatabase }           = require('./config/connect-db');
@@ -15,7 +16,7 @@ app.set('views', './views');
 app.use(server.static('public'))
 
 app.get('/home', (req, res) => {
-    res.render('index');
+    res.render('homepage/index');
 })
 
 
